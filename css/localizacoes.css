@@ -1,0 +1,78 @@
+/* 1.Categorias e Cards*/
+.main-content {
+    max-width: 1000px; 
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+}
+
+.category-title {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 0.5rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    margin-bottom: 3rem; 
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; 
+    background-color: #f4f4f4; 
+}
+
+/* Conteúdo de texto do card */
+.card-content {
+    padding: 1.5rem;
+}
+.card-title {
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+.card-location {
+    font-size: 0.9rem; 
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+.card-location svg {
+    width: 16px;
+    height: 16px;
+    fill: #777; 
+    flex-shrink: 0; 
+}
+
+@media (max-width: 640px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .category-title {
+        font-size: 1.5rem;
+    }
+}
