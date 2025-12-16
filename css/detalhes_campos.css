@@ -1,0 +1,15 @@
+.discover-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-marcar {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-detalhes {
+    background-size: cover;
+    background-position: center;
+}
